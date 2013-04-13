@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: PacketTest - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP95.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/PacketTest.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\PacketTest\MyPacket.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP95.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP96.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/PacketTest.pdb" /debug /machine:I386 /out:"Debug/PacketTest.exe" /pdbtype:sept 
+".\Debug\PacketTest.obj"
+".\Debug\PacketTestDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\PacketTest.res"
+".\Debug\MySocket.obj"
+".\Debug\MyPacket.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP96.tmp"
+<h3>Output Window</h3>
+Compiling...
+MyPacket.cpp
+e:\cr09\作业&项目\2阶段\项目\sims online\packettest\mypacket.h(35) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+Linking...
+
+
+
+<h3>Results</h3>
+PacketTest.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>

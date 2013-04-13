@@ -1,0 +1,42 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: LDCS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP331.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /FR"Debug/" /Fp"Debug/LDCS.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\CR09\作业&项目\2阶段\远控\LDCS\MainFrm.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP331.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP332.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/LDCS.pdb" /debug /machine:I386 /out:"Debug/LDCS.exe" /pdbtype:sept 
+".\Debug\Dib.obj"
+".\Debug\dibapi.obj"
+".\Debug\LDCS.obj"
+".\Debug\LDCSDoc.obj"
+".\Debug\LDCSView.obj"
+".\Debug\MainFrm.obj"
+".\Debug\StdAfx.obj"
+".\Debug\LDCS.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP332.tmp"
+<h3>Output Window</h3>
+Compiling...
+MainFrm.cpp
+Linking...
+Creating command line "bscmake.exe /nologo /o"Debug/LDCS.bsc"  ".\Debug\StdAfx.sbr" ".\Debug\Dib.sbr" ".\Debug\dibapi.sbr" ".\Debug\LDCS.sbr" ".\Debug\LDCSDoc.sbr" ".\Debug\LDCSView.sbr" ".\Debug\MainFrm.sbr""
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+LDCS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

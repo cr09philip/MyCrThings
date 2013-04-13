@@ -1,0 +1,72 @@
+
+void CCbitmapTestDlg::ShowScreen()
+{	
+    CDC SrcDc;
+
+	SrcDc.CreateDC("Display",NULL,NULL,NULL);
+
+    int nCx = GetSystemMetrics(SM_CXSCREEN);
+    int nCy = GetSystemMetrics(SM_CYSCREEN);
+    
+    CBitmap bitmap;
+    
+    bitmap.CreateCompatibleBitmap(&SrcDc,nCx,nCy);
+    
+    CDC memdc;
+    
+    memdc.CreateCompatibleDC(&SrcDc);
+    
+    memdc.SelectObject(bitmap);
+    
+    memdc.SetStretchBltMode(HALFTONE);
+    
+    memdc.StretchBlt(0, 0, nCx, nCy, &SrcDc, 0, 0, nCx, nCy, SRCCOPY);
+    
+    LONG   nLen = nCx * nCy * sizeof(DWORD);
+    
+    char*  lpvBits = new char[nLen];
+    
+	GetBitmapBits(bitmap,nLen,lpvBits);
+
+    CRect rect;
+    GetDlgItem(IDC_STATIC)->GetWindowRect(&rect); 
+    this->ScreenToClient(&rect); 
+
+    DrawVidio(this, rect, lpvBits);
+}
+
+
+void CCbitmapTestDlg::DrawVidio( CWnd* pWnd, RECT &rect ,char *pBitBuff)
+{
+    if (pWnd->m_hWnd == NULL)
+    {
+        return;
+    }
+    
+    int nCx = GetSystemMetrics(SM_CXSCREEN);
+    int nCy = GetSystemMetrics(SM_CYSCREEN);
+
+    CRect rt = rect;
+    
+    CDC MemDC;
+    
+    CBitmap MemBit;
+    
+    CDC *pDC = pWnd->GetDC();
+
+	//用来使图像不失真 
+    pDC->SetStretchBltMode(HALFTONE);
+    
+    MemBit.CreateCompatibleBitmap(pDC,nCx,nCy);
+    
+    MemDC.CreateCompatibleDC(pDC);
+    
+    MemDC.SelectObject(MemBit);
+    
+    MemBit.SetBitmapBits(nCx * nCy * 4, pBitBuff + 8);
+
+    pDC->StretchBlt( rt.left, rt.top, rt.Width(), rt.Height() 
+                        ,&MemDC 
+                        ,0, 0, nCx, nCy
+                        ,SRCCOPY);
+}

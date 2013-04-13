@@ -1,0 +1,64 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SIMS_CLIENT - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/SIMS_CLIENT.res" /d "_DEBUG" /d "_AFXDLL" "E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\SIMS_CLIENT.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F2.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/SIMS_CLIENT.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\Cache.cpp"
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\MyListCtrl.cpp"
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\MyPacket.cpp"
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\MySocketInit.cpp"
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\MyUDPSocket.cpp"
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\SIMS_CLIENT.cpp"
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\SIMS_CLIENTDlg.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F2.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F3.tmp" with contents
+[
+/nologo /MDd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_AFXDLL" /D "_MBCS" /Fp"Debug/SIMS_CLIENT.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"E:\CR09\作业&项目\2阶段\项目\SIMS ONLINE\CR09李朋飞2阶段项目\SIMS_CLIENT\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F3.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F4.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/SIMS_CLIENT.pdb" /debug /machine:I386 /out:"Debug/SIMS_CLIENT.exe" /pdbtype:sept 
+".\Debug\Cache.obj"
+".\Debug\MyListCtrl.obj"
+".\Debug\MyPacket.obj"
+".\Debug\MySocketInit.obj"
+".\Debug\MyUDPSocket.obj"
+".\Debug\SIMS_CLIENT.obj"
+".\Debug\SIMS_CLIENTDlg.obj"
+".\Debug\StdAfx.obj"
+".\Debug\SIMS_CLIENT.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP1F4.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+Cache.cpp
+MyListCtrl.cpp
+MyPacket.cpp
+MySocketInit.cpp
+MyUDPSocket.cpp
+e:\cr09\作业&项目\2阶段\项目\sims online\cr09李朋飞2阶段项目\sims_client\myudpsocket.h(31) : warning C4200: nonstandard extension used : zero-sized array in struct/union
+SIMS_CLIENT.cpp
+SIMS_CLIENTDlg.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+SIMS_CLIENT.exe - 0 error(s), 1 warning(s)
+</pre>
+</body>
+</html>
